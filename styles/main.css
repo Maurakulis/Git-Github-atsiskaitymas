@@ -60,7 +60,7 @@ section p span {
   border-bottom: 2px dotted #fff;
 }
 section p span:hover {
-  color: rgb(4, 87, 139);
+  color: #009dff;
 }
 
 p,
