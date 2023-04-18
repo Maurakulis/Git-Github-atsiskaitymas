@@ -2,8 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
   background-image: linear-gradient(30deg, rgba(14, 14, 14, 0.4) 0%, rgba(15, 15, 15, 0.7098039216) 100%), url(../task/resources/bg-overlay.png), url(../task/resources/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: no-repeat, repeat, no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100vh;
   background-position: center;
   font-family: "Inter", sans-serif;
@@ -24,6 +25,8 @@ main h1 {
 section[id=meta] {
   border-top: 1px solid rgba(255, 255, 255, 0.8705882353);
   border-bottom: 1px solid rgba(255, 255, 255, 0.8705882353);
+  padding: 20px;
+  margin: 0 20px;
 }
 
 ul {
@@ -43,6 +46,10 @@ li > a {
   color: #fff;
 }
 
+p {
+  line-height: 30px;
+  text-align: left;
+}
 p span {
   border-bottom-width: 1px;
   border-bottom: 2px dotted #fff;
@@ -71,4 +78,25 @@ img[alt=gem] {
   align-self: center;
   border: 0.01em solid rgba(255, 255, 255, 0.8705882353);
   height: 50px;
+}
+
+@media screen and (min-width: 1000px) {
+  section[id=meta] {
+    margin: 0 50px;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    width: 200px;
+    padding: 10px 0;
+  }
+  .placeholder {
+    border: 0.01em solid rgba(255, 255, 255, 0.8705882353);
+  }
+  p {
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
