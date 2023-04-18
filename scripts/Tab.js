@@ -1,24 +1,44 @@
+import { Lorem } from "./data.js"
+
 export default class Tab {
-  #props
+  #heading
+  #mediaContentUri
   #closeIcon
   #tab
-  constructor(props, closeIcon, tab) {
-    this.#props = props
-    this.#closeIcon = closeIcon
-    this.#tab = tab
+  constructor(heading, mediaContentUri) {
+    this.#heading = heading
+    this.#mediaContentUri = mediaContentUri
   }
 
   render() {
     this.#tab = document.createElement('div')
     this.#tab.setAttribute('id', 'tab')
-    const txt = document.createElement('p')
-    txt.append(document.createTextNode('ll'))
+    const headingText = document.createElement('h3')
+    headingText.append(document.createTextNode(this.#heading))
 
     this.#closeIcon = document.createElement('i')
     this.#closeIcon.classList.add('fa-solid', 'fa-x')
     this.close()
 
-    this.#tab.append(this.#closeIcon, txt)
+    let mediaContent
+    if (this.#mediaContentUri.includes('.mp4')) {
+      mediaContent = document.createElement('video')
+      mediaContent.setAttribute('autoplay', '')
+
+    } else {
+      console.log('foto')
+      mediaContent = document.createElement('img')
+    }
+    const mediaDiv = document.createElement('div')
+    mediaDiv.classList.add('mediaDiv')
+
+    mediaContent.setAttribute('src', this.#mediaContentUri)
+    mediaDiv.append(mediaContent)
+
+    const ptext = document.createElement('p')
+    ptext.innerHTML = Lorem
+
+    this.#tab.append(this.#closeIcon, headingText, mediaDiv, ptext)
 
     return this.#tab
   }

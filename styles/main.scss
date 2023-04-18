@@ -57,23 +57,25 @@ li:hover {
   background-color: #ffffff5d;
 }
 
-p {
-  line-height: 30px;
-  text-align: left;
+section {
+  p {
+    text-align: left;
 
-  span {
-    border-bottom-width: 1px;
-    border-bottom: 2px dotted #fff;
-  }
+    span {
+      border-bottom-width: 1px;
+      border-bottom: 2px dotted #fff;
+    }
 
-  span:hover {
-    color: rgb(4, 87, 139);
+    span:hover {
+      color: rgb(4, 87, 139);
+    }
   }
 }
 
 p,
 a {
   font-weight: 200;
+  line-height: 30px;
 }
 
 img[alt=gem] {
@@ -113,8 +115,10 @@ img[alt=gem] {
     border: 0.01em solid #ffffffde;
   }
 
-  p {
-    text-align: center;
+  section {
+    p {
+      text-align: center;
+    }
   }
 
   div[id=tab] {

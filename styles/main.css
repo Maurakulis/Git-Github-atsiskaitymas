@@ -52,21 +52,21 @@ li:hover {
   background-color: rgba(255, 255, 255, 0.3647058824);
 }
 
-p {
-  line-height: 30px;
+section p {
   text-align: left;
 }
-p span {
+section p span {
   border-bottom-width: 1px;
   border-bottom: 2px dotted #fff;
 }
-p span:hover {
+section p span:hover {
   color: rgb(4, 87, 139);
 }
 
 p,
 a {
   font-weight: 200;
+  line-height: 30px;
 }
 
 img[alt=gem] {
@@ -102,7 +102,7 @@ img[alt=gem] {
   .placeholder {
     border: 0.01em solid rgba(255, 255, 255, 0.8705882353);
   }
-  p {
+  section p {
     text-align: center;
   }
   div[id=tab] {

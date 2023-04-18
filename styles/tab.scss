@@ -2,20 +2,40 @@ div[id=tab] {
   position: fixed;
   z-index: 2;
   color: #fff;
-  background-color: #21212192;
+  background-color: #212121;
   width: 95vw;
   height: 95vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
-  padding: 50px;
+  padding: 20px 50px;
+  overflow: auto;
+
+  video,
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  h3 {
+    display: inline-block;
+    letter-spacing: 10px;
+    line-height: 50px;
+    border-bottom: 1px solid white;
+  }
+}
+
+.mediaDiv {
+  height: 300px;
 }
 
 .fa-x {
   position: absolute;
   right: 20px;
   top: 20px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1000px) {

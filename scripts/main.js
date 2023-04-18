@@ -1,11 +1,12 @@
 import Tab from "./Tab.js"
+import { MediaMap } from "./data.js"
 
 const ul = document.querySelector('ul').children
-console.log(ul)
 
 for (const entry of ul) {
-  entry.addEventListener('click', () => {
-    const tab = new Tab(entry)
+  entry.addEventListener('click', (event) => {
+    console.log()
+    const tab = new Tab(entry.textContent, MediaMap[entry.textContent])
     document.body.append(tab.render())
 
     const main = document.querySelector('main')
