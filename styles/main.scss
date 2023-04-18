@@ -4,7 +4,7 @@
 $white-border: 1px solid #ffffffde;
 
 body {
-  background-image: linear-gradient(61deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3) 100%), url(../task/resources/bg-overlay.png), url(../task/resources/bg.jpg);
+  background-image: linear-gradient(30deg, #0e0e0e66 0%, #0f0f0fb5 100%), url(../task/resources/bg-overlay.png), url(../task/resources/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -75,7 +75,7 @@ img[alt=gem] {
   border-radius: 50px;
 }
 
-span {
+.placeholder {
   align-self: center;
   border: 0.01em solid #ffffffde;
   height: 50px;

@@ -1,7 +1,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
-  background-image: linear-gradient(61deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3) 100%), url(../task/resources/bg-overlay.png), url(../task/resources/bg.jpg);
+  background-image: linear-gradient(30deg, rgba(14, 14, 14, 0.4) 0%, rgba(15, 15, 15, 0.7098039216) 100%), url(../task/resources/bg-overlay.png), url(../task/resources/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -67,7 +67,7 @@ img[alt=gem] {
   border-radius: 50px;
 }
 
-span {
+.placeholder {
   align-self: center;
   border: 0.01em solid rgba(255, 255, 255, 0.8705882353);
   height: 50px;
