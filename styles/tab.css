@@ -1,0 +1,26 @@
+div[id=tab] {
+  position: fixed;
+  z-index: 2;
+  color: #fff;
+  background-color: rgba(33, 33, 33, 0.5725490196);
+  width: 95vw;
+  height: 95vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.fa-x {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+  div[id=tab] {
+    width: 70vw;
+    height: 80vh;
+  }
+}/*# sourceMappingURL=tab.css.map */

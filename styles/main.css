@@ -1,5 +1,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url(tab.css);
 body {
   background-image: linear-gradient(30deg, rgba(14, 14, 14, 0.4) 0%, rgba(15, 15, 15, 0.7098039216) 100%), url(../task/resources/bg-overlay.png), url(../task/resources/bg.jpg);
   background-repeat: no-repeat, repeat, no-repeat;
@@ -103,5 +104,9 @@ img[alt=gem] {
   }
   p {
     text-align: center;
+  }
+  div[id=tab] {
+    width: 70vw;
+    height: 80vh;
   }
 }/*# sourceMappingURL=main.css.map */
