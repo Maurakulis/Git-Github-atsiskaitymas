@@ -1,1 +1,74 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  background-image: linear-gradient(61deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3) 100%), url(../task/resources/bg-overlay.png), url(../task/resources/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  text-align: center;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main h1 {
+  font-weight: 500;
+}
+
+section[id=meta] {
+  border-top: 1px solid rgba(255, 255, 255, 0.8705882353);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8705882353);
+}
+
+ul {
+  padding: 0;
+  padding: 0 20px;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  border: 1px solid rgba(255, 255, 255, 0.8705882353);
+  padding: 10px 0;
+  border-radius: 1px;
+}
+li > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p span {
+  border-bottom-width: 1px;
+  border-bottom: 2px dotted #fff;
+}
+p span:hover {
+  color: rgb(4, 87, 139);
+}
+
+p,
+a {
+  font-weight: 200;
+}
+
+img[alt=gem] {
+  align-self: center;
+  width: 30px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 1px solid rgba(255, 255, 255, 0.8705882353);
+  padding: 10px;
+  border-radius: 50px;
+}
+
+span {
+  align-self: center;
+  border: 0.01em solid rgba(255, 255, 255, 0.8705882353);
+  height: 50px;
+}/*# sourceMappingURL=main.css.map */
