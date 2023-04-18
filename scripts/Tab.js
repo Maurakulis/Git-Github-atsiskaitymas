@@ -17,8 +17,12 @@ export default class Tab {
     headingText.append(document.createTextNode(this.#heading))
 
     this.#closeIcon = document.createElement('i')
-    this.#closeIcon.classList.add('fa-solid', 'fa-x')
+    this.#closeIcon.classList.add('fa-solid', 'fa-xmark')
     this.close()
+
+    const headingDiv = document.createElement('div')
+    headingDiv.classList.add('headingDiv')
+    headingDiv.append(headingText, this.#closeIcon)
 
     let mediaContent
     if (this.#mediaContentUri.includes('.mp4')) {
@@ -38,7 +42,7 @@ export default class Tab {
     const ptext = document.createElement('p')
     ptext.innerHTML = Lorem
 
-    this.#tab.append(this.#closeIcon, headingText, mediaDiv, ptext)
+    this.#tab.append(headingDiv, mediaDiv, ptext)
 
     return this.#tab
   }

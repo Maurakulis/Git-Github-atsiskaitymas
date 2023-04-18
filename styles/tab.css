@@ -30,11 +30,20 @@ div[id=tab] h3 {
   height: 300px;
 }
 
-.fa-x {
-  position: absolute;
-  right: 20px;
-  top: 20px;
+.headingDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-xmark {
+  font-size: 40px;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.fa-xmark:hover {
+  transform: rotate(90deg);
 }
 
 @media screen and (min-width: 1000px) {
